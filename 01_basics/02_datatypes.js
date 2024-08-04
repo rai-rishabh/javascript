@@ -11,6 +11,7 @@ let name = "Rishabh"
 let age = 23
 let isLoggedIn = false
 
+//Primitive Dataypes
 // number=> 2 to power 53
 // bigint
 // string => "" or '' but prefer using ""
@@ -21,8 +22,8 @@ let isLoggedIn = false
 
 //object
 
-console.log(typeof "Rishabh");
-console.log(typeof name);
-console.log(typeof age);
+console.log(typeof "Rishabh"); //string
+console.log(typeof name); //string
+console.log(typeof age); // number
 console.log(typeof null); // object
 console.log(typeof undefined); // undefined
