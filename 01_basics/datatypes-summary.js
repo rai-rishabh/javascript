@@ -36,3 +36,30 @@ const myFunction = function(){
 }
 console.log(typeof myFunction); // function type- function object
 
+
+//++++++++++++++++++++++++++++++Memory++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack Memory(Primitive Dataypes) get a copy of variable declared , 
+// Heap Memory(Non-Primitive Datatypes) we get reference from heap of two or more variables declared
+
+
+
+// Stack example
+let myYoutubename = "Rishabh Rai"
+let anotherName = myYoutubename
+anotherName = "Mrinal"
+console.log(myYoutubename)
+console.log(anotherName)
+
+// Heap Example: in stack 2 var initialized userOne and userTwo but have same reference in heap memory and any changes happen in Original Value
+let userOne ={
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "rairishabh871@gmail.com"
+
+console.log(userOne.email); //rairishabh871@gmail.com
+console.log(userTwo.email); //rairishabh871@gmail.com
