@@ -24,5 +24,16 @@ console.log(Math.ceil(9.1)); // gives upper value: 10
 console.log(Math.floor(9.9)); // gives lower value: 9
 console.log(Math.sqrt(25)); //square root: 5
 console.log(Math.pow(2,3)); // power: 8
-// console.log(Math.min(2, 5, 3, 6, 8, 10)); //gives min value
-// console.log(Math.pow(2, 5, 3, 6, 8, 10)); //gives max value
+console.log(Math.min(2, 5, 3, 6, 8, 10)); //gives min value
+console.log(Math.max(2, 5, 3, 6, 8, 10)); //gives max value
+
+console.log(Math.random()); // values from 0 to 1
+console.log((Math.random()*10) + 1); //+1 beacause when value is 0.041 then it results in 0.41 All this to get minimum value 1
+console.log(Math.floor(Math.random()*10) + 1);
+
+// Formula for getting Random value between a Range
+
+const min = 10
+const max = 20
+
+console.log(Math.floor(Math.random()* (max - min + 1)) + min)
